@@ -12,6 +12,7 @@
 <br>
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](#license)
+[![PyPI version](https://badge.fury.io/py/god-skill-suite.svg)](https://pypi.org/project/god-skill-suite/)
 [![Skills](https://img.shields.io/badge/Skills-52-brightgreen)](#-the-52-skill-registry)
 [![Tested](https://img.shields.io/badge/Tested-Ollama%20%7C%20Self--Eval-orange)](#-validated-ecosystem)
 [![OS: Global](https://img.shields.io/badge/Platform-Windows%20%7C%20macOS%20%7C%20Linux-lightgrey)](#-one-minute-deployment)
@@ -88,14 +89,19 @@ irm https://raw.githubusercontent.com/gnanirahulnutakki/god-skill-suite/main/ins
 </details>
 
 <details>
-<summary><b>🐍 Python / UV (Cross-Platform)</b></summary>
+<summary><b>🐍 PyPI (uv / pipx / pip)</b></summary>
 <br>
+
+Install safely from PyPI for global CLI access across your system.
 
 ```bash
 # With uv (fastest)
 uv tool install god-skill-suite && god-skills install
 
-# Direct, no install required
+# With pipx
+pipx install god-skill-suite && god-skills install
+
+# Direct, no install required (run from cloned repo)
 python installer/install.py
 ```
 </details>

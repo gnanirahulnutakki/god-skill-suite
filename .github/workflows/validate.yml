@@ -40,12 +40,14 @@ jobs:
           # Only name and description are truly required — license is optional
           required_fields = ["name", "description"]
 
-          # Accept any heading that looks like a checklist / review section
+          # Accept any heading that looks like a checklist / review / protocol section
+          # meta-conductor uses "Protocol", research skills use "Review" sections
           checklist_patterns = [
-              "Self-Review Checklist",
-              "Review Checklist",
-              "## Checklist",
               "Checklist",
+              "Protocol",
+              "## Review",
+              "self-review",
+              "Self-Review",
           ]
 
           for skill_path in sorted(skills_dir.iterdir()):

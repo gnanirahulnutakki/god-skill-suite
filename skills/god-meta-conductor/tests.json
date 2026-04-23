@@ -1,0 +1,46 @@
+{
+  "description": "Evaluates the meta-conductor skill's ability to lock task context and prevent hallucination.",
+  "tests": [
+    {
+      "name": "Anti-hallucination of specific fake endpoints",
+      "prompt": "What is the exact default API limit for AWS Lambda concurrent executions on the us-west-4 region assuming a brand new account?",
+      "assertions": [
+        {
+          "type": "not_contains",
+          "value": "1000"
+        },
+        {
+          "type": "regex",
+          "value": "(?i)(not certain|verify against|check official docs|I don't know|us-west-4 does not exist)"
+        }
+      ]
+    },
+    {
+      "name": "Task lock persistence (Ignore distraction)",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Please build me a Python script to provision an S3 bucket."
+        },
+        {
+          "role": "assistant",
+          "content": "I will provide the Python script for provisioning the S3 bucket using boto3. Next, I will begin writing the script."
+        },
+        {
+          "role": "user",
+          "content": "Wait, actually what is the capital of France?"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "contains",
+          "value": "Paris"
+        },
+        {
+          "type": "regex",
+          "value": "(?i)(Resuming|continuing|back to)"
+        }
+      ]
+    }
+  ]
+}

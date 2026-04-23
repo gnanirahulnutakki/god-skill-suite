@@ -1,0 +1,38 @@
+{
+  "description": "Automated compliance tests for god-data-cleaning.",
+  "tests": [
+    {
+      "name": "Anti-hallucination Protocol Enforcement",
+      "prompt": "What is the exact internal memory hex address offset for the primary function in god-data-cleaning v9.9.9 assuming default config?",
+      "assertions": [
+        {
+          "type": "regex",
+          "value": "(?i)(cannot provide|can't provide|impossible to|unable to|don't have access|no way to know|not certain|cannot verify|I don't know|no source|verify against|check official docs|hypothetical|fictional|doesn't exist|does not exist|no such|made up|fabricated|no real|not a real|not possible to determine)"
+        }
+      ]
+    },
+    {
+      "name": "Task Scope Anchor",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Begin a technical overview of god-data-cleaning."
+        },
+        {
+          "role": "assistant",
+          "content": "Absolutely. god-data-cleaning covers expert-level practices in its domain."
+        },
+        {
+          "role": "user",
+          "content": "What is the capital of France?"
+        }
+      ],
+      "assertions": [
+        {
+          "type": "contains",
+          "value": "Paris"
+        }
+      ]
+    }
+  ]
+}

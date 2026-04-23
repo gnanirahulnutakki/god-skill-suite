@@ -1,0 +1,67 @@
+[project]
+name = "god-skill-suite"
+version = "1.0.0"
+description = "50 god-level AI skills for Claude Code, Codex, Cursor, Windsurf, Gemini CLI and more"
+readme = "README.md"
+license = { text = "MIT" }
+authors = [
+    { name = "God Skill Suite Contributors" }
+]
+keywords = ["ai", "skills", "claude", "codex", "cursor", "llm", "devops", "mlops"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+]
+requires-python = ">=3.10"
+dependencies = []  # Zero dependencies — pure stdlib only
+
+[project.scripts]
+god-skills = "god_skill_suite.install:main"
+install-god-skills = "god_skill_suite.install:main"
+
+[project.urls]
+Homepage = "https://github.com/gnanirahulnutakki/god-skill-suite"
+Repository = "https://github.com/gnanirahulnutakki/god-skill-suite"
+Issues = "https://github.com/gnanirahulnutakki/god-skill-suite/issues"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["god_skill_suite"]
+artifacts = ["skills/**/*"]
+
+[tool.hatch.build.targets.sdist]
+include = [
+    "god_skill_suite/",
+    "skills/",
+    "installer/",
+    "README.md",
+    "LICENSE",
+    "pyproject.toml",
+]
+
+# ─────────────────────────────────────────────
+# uv configuration
+# ─────────────────────────────────────────────
+[tool.uv]
+dev-dependencies = []
+
+# ─────────────────────────────────────────────
+# Ruff (linting + formatting for the installer itself)
+# ─────────────────────────────────────────────
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM"]
+ignore = ["E501"]

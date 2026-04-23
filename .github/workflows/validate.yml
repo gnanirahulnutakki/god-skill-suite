@@ -1,0 +1,83 @@
+name: Validate Skills
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'skills/**'
+      - 'installer/install.py'
+  pull_request:
+    branches: [main]
+    paths:
+      - 'skills/**'
+      - 'installer/install.py'
+
+jobs:
+  validate:
+    name: Validate Skill Frontmatter & Structure
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Validate YAML frontmatter in all skills
+        run: |
+          python3 - <<'EOF'
+          import sys
+          import re
+          from pathlib import Path
+
+          skills_dir = Path("skills")
+          errors = []
+          required_fields = ["name", "description", "license"]
+
+          for skill_path in sorted(skills_dir.iterdir()):
+              if not skill_path.is_dir() or skill_path.name.startswith("."):
+                  continue
+              skill_file = skill_path / "SKILL.md"
+              if not skill_file.exists():
+                  errors.append(f"{skill_path.name}: Missing SKILL.md")
+                  continue
+
+              content = skill_file.read_text(encoding="utf-8")
+              if not content.startswith("---"):
+                  errors.append(f"{skill_path.name}: Missing YAML frontmatter")
+                  continue
+
+              # Extract frontmatter
+              fm_match = re.match(r"^---\n(.*?)\n---", content, re.DOTALL)
+              if not fm_match:
+                  errors.append(f"{skill_path.name}: Malformed YAML frontmatter")
+                  continue
+
+              fm = fm_match.group(1)
+              for field in required_fields:
+                  if f"{field}:" not in fm:
+                      errors.append(f"{skill_path.name}: Missing required field '{field}'")
+
+              # Check minimum line count
+              lines = len(content.splitlines())
+              if lines < 50:
+                  errors.append(f"{skill_path.name}: Too short ({lines} lines, minimum 50)")
+
+              # Check for checklist
+              if "Self-Review Checklist" not in content:
+                  errors.append(f"{skill_path.name}: Missing Self-Review Checklist section")
+
+          if errors:
+              print("❌ Validation failures:\n")
+              for e in errors:
+                  print(f"  • {e}")
+              sys.exit(1)
+          else:
+              print(f"✅ All {len(list(skills_dir.iterdir()))} skills passed validation!")
+          EOF
+
+      - name: Dry run installer
+        run: |
+          python3 installer/install.py --dry-run --non-interactive --all-skills --targets claude-code

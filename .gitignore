@@ -1,0 +1,47 @@
+# ── Python / build artifacts ──────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+
+# ── Environment ───────────────────────────────────────────────────────────────
+.env
+.venv/
+venv/
+env/
+
+# ── OS artifacts ──────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+
+# ── IDE ───────────────────────────────────────────────────────────────────────
+.vscode/settings.json
+.idea/
+
+# ── Videos: only keep the hero trailer in the repo ────────────────────────────
+# The scene/B-roll videos are large and not referenced in the README.
+# Stitch them locally, export the final cut, and commit only that.
+videos/AI_Engineering_Suite_Never_Guess.mp4
+videos/AI_Trailer_Generation_Complete.mp4
+videos/AI_Video_Generation_A_Technical_Showcase.mp4
+videos/anime_cyberpunk_ui_dashboard.mp4
+videos/cyberpunk_anime_shockwave.mp4
+videos/cyberpunk_haki_shockwave.mp4
+videos/grok-video-8035354e-ec45-43f9-80a7-26977dd5642e.mp4
+videos/rasengan_data_sphere_neon_city.mp4
+videos/scene 3.mp4
+videos/scene1.mp4
+videos/scene2.mp4
+videos/scene4.mp4
+videos/scene5.mp4
+videos/Server_Room_Hallucination_Chaos.mp4
+
+# ── Temp GIF palette ──────────────────────────────────────────────────────────
+/tmp/palette.png
+
+# ── Test results (generated, regenerate locally) ──────────────────────────────
+# Uncomment the line below if you don't want to commit test results:
+# docs/TEST_RESULTS.md

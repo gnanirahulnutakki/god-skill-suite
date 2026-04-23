@@ -6,11 +6,13 @@ on:
     paths:
       - 'skills/**'
       - 'installer/install.py'
+      - '.github/workflows/**'
   pull_request:
     branches: [main]
     paths:
       - 'skills/**'
       - 'installer/install.py'
+      - '.github/workflows/**'
 
 jobs:
   validate:

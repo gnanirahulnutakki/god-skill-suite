@@ -1,8 +1,12 @@
 name: Publish to PyPI
 
 on:
-  release:
-    types: [published]
+  # Uncomment the lines below once you've configured Trusted Publishing on pypi.org:
+  # 1. Go to https://pypi.org → Account → Publishing → Add Pending Publisher
+  # 2. Set: Owner=gnanirahulnutakki, Repo=god-skill-suite, Workflow=publish_pypi.yml
+  # release:
+  #   types: [published]
+  workflow_dispatch:  # Manual trigger only until PyPI is configured
 
 jobs:
   pypi-publish:

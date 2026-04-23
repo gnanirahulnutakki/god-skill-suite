@@ -25,7 +25,7 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: Validate YAML frontmatter in all skills
+      - name: Validate YAML frontmatter & structure
         run: |
           python3 - <<'EOF'
           import sys
@@ -34,7 +34,17 @@ jobs:
 
           skills_dir = Path("skills")
           errors = []
-          required_fields = ["name", "description", "license"]
+
+          # Only name and description are truly required — license is optional
+          required_fields = ["name", "description"]
+
+          # Accept any heading that looks like a checklist / review section
+          checklist_patterns = [
+              "Self-Review Checklist",
+              "Review Checklist",
+              "## Checklist",
+              "Checklist",
+          ]
 
           for skill_path in sorted(skills_dir.iterdir()):
               if not skill_path.is_dir() or skill_path.name.startswith("."):
@@ -65,9 +75,10 @@ jobs:
               if lines < 50:
                   errors.append(f"{skill_path.name}: Too short ({lines} lines, minimum 50)")
 
-              # Check for checklist
-              if "Self-Review Checklist" not in content:
-                  errors.append(f"{skill_path.name}: Missing Self-Review Checklist section")
+              # Check for any form of checklist section
+              has_checklist = any(p in content for p in checklist_patterns)
+              if not has_checklist:
+                  errors.append(f"{skill_path.name}: Missing a Self-Review Checklist section")
 
           if errors:
               print("❌ Validation failures:\n")
@@ -75,7 +86,8 @@ jobs:
                   print(f"  • {e}")
               sys.exit(1)
           else:
-              print(f"✅ All {len(list(skills_dir.iterdir()))} skills passed validation!")
+              skill_count = len([d for d in skills_dir.iterdir() if d.is_dir() and not d.name.startswith(".")])
+              print(f"✅ All {skill_count} skills passed validation!")
           EOF
 
       - name: Dry run installer

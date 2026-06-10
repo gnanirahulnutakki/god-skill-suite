@@ -75,7 +75,7 @@ Built natively for **[Claude Code](https://claude.ai/code)**, **[Cursor](https:/
 <br>
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/gnanirahulnutakki/god-skill-suite/main/installer/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/ArdurAI/god-skill-suite/main/installer/install.sh | bash
 ```
 </details>
 
@@ -84,7 +84,7 @@ curl -fsSL https://raw.githubusercontent.com/gnanirahulnutakki/god-skill-suite/m
 <br>
 
 ```powershell
-irm https://raw.githubusercontent.com/gnanirahulnutakki/god-skill-suite/main/installer/install.ps1 | iex
+irm https://raw.githubusercontent.com/ArdurAI/god-skill-suite/main/installer/install.ps1 | iex
 ```
 </details>
 

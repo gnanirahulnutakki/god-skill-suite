@@ -5,7 +5,7 @@
 ### Method 1: uv (Fastest — Recommended)
 ```bash
 # One-liner: clone and run
-git clone https://github.com/gnanirahulnutakki/god-skill-suite.git
+git clone https://github.com/ArdurAI/god-skill-suite.git
 cd god-skill-suite
 uv run installer/install.py
 ```
@@ -24,12 +24,12 @@ god-skills
 
 ### Method 4: Shell bootstrap (macOS/Linux)
 ```bash
-curl -sSL https://raw.githubusercontent.com/gnanirahulnutakki/god-skill-suite/main/installer/install.sh | bash
+curl -sSL https://raw.githubusercontent.com/ArdurAI/god-skill-suite/main/installer/install.sh | bash
 ```
 
 ### Method 5: PowerShell (Windows)
 ```powershell
-irm https://raw.githubusercontent.com/gnanirahulnutakki/god-skill-suite/main/installer/install.ps1 | iex
+irm https://raw.githubusercontent.com/ArdurAI/god-skill-suite/main/installer/install.ps1 | iex
 ```
 
 ### Method 6: Manual copy

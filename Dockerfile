@@ -1,6 +1,6 @@
 FROM python:3.12-slim
 
-LABEL org.opencontainers.image.source="https://github.com/gnanirahulnutakki/god-skill-suite"
+LABEL org.opencontainers.image.source="https://github.com/ArdurAI/god-skill-suite"
 LABEL org.opencontainers.image.description="65 God-Level AI Skills for Claude Code, Cursor, Codex, Windsurf, Gemini CLI"
 LABEL org.opencontainers.image.licenses="MIT"
 

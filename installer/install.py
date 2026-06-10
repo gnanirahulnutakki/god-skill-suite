@@ -601,7 +601,7 @@ def print_usage_guide(installed_targets: list[str], target_configs: dict, skills
         print()
 
     print(c(BOLD, "  GITHUB REPOSITORY"))
-    print(c(CYAN, "    https://github.com/gnanirahulnutakki/god-skill-suite"))
+    print(c(CYAN, "    https://github.com/ArdurAI/god-skill-suite"))
     print(c(DIM,  "    Star it, fork it, contribute to it.\n"))
 
 

@@ -27,9 +27,9 @@ god-skills = "god_skill_suite.install:main"
 install-god-skills = "god_skill_suite.install:main"
 
 [project.urls]
-Homepage = "https://github.com/gnanirahulnutakki/god-skill-suite"
-Repository = "https://github.com/gnanirahulnutakki/god-skill-suite"
-Issues = "https://github.com/gnanirahulnutakki/god-skill-suite/issues"
+Homepage = "https://github.com/ArdurAI/god-skill-suite"
+Repository = "https://github.com/ArdurAI/god-skill-suite"
+Issues = "https://github.com/ArdurAI/god-skill-suite/issues"
 
 [build-system]
 requires = ["hatchling"]

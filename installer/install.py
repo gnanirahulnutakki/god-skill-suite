@@ -43,7 +43,7 @@ def banner():
     print()
     print(c(BOLD + CYAN, "╔══════════════════════════════════════════════════════════════╗"))
     print(c(BOLD + CYAN, "║          GOD-LEVEL SKILL SUITE — INSTALLER v1.0             ║"))
-    print(c(BOLD + CYAN, f"║    52 Skills · Every Domain · Zero Hallucination Mode        ║"))
+    print(c(BOLD + CYAN, f"║    65 Skills · Every Domain · Zero Hallucination Mode        ║"))
     print(c(BOLD + CYAN, "╚══════════════════════════════════════════════════════════════╝"))
     print()
 

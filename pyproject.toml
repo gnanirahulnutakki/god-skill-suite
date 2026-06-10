@@ -1,7 +1,7 @@
 [project]
 name = "god-skill-suite"
-version = "1.0.0"
-description = "50 god-level AI skills for Claude Code, Codex, Cursor, Windsurf, Gemini CLI and more"
+version = "1.2.0"
+description = "65 god-level AI skills for Claude Code, Codex, Cursor, Windsurf, Gemini CLI and more"
 readme = "README.md"
 license = { text = "MIT" }
 authors = [

@@ -6,14 +6,14 @@
 
 <br>
 
-**52 Battle-Tested, Production-Grade AI Skills.** <br>
+**65 Battle-Tested, Production-Grade AI Skills.** <br>
 *Covering every dimension of modern software engineering. Zero Hallucination.*
 
 <br>
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](#license)
 [![PyPI version](https://badge.fury.io/py/god-skill-suite.svg)](https://pypi.org/project/god-skill-suite/)
-[![Skills](https://img.shields.io/badge/Skills-52-brightgreen)](#-the-52-skill-registry)
+[![Skills](https://img.shields.io/badge/Skills-65-brightgreen)](#-the-65-skill-registry)
 [![Tested](https://img.shields.io/badge/Tested-Ollama%20%7C%20Self--Eval-orange)](#-validated-ecosystem)
 [![OS: Global](https://img.shields.io/badge/Platform-Windows%20%7C%20macOS%20%7C%20Linux-lightgrey)](#-one-minute-deployment)
 
@@ -108,13 +108,13 @@ python installer/install.py
 
 ---
 
-## 📚 The 52-Skill Registry
+## 📚 The 65-Skill Registry
 
 > [!IMPORTANT]
 > **Always load `god-meta-conductor` first.** It is the baseline operating system — establishing Zero-Hallucination rules and scope-locking before any domain skill activates.
 
 <details>
-<summary><b>🧠 Core Development — 6 Skills</b></summary>
+<summary><b>🧠 Core Development — 8 Skills</b></summary>
 <br>
 
 <div align="center">
@@ -137,11 +137,13 @@ python installer/install.py
 | `god-dev-builder` | Building production systems: architecture decisions, scaffolding, iterative delivery |
 | `god-dev-codebase` | Working with existing codebases: reading, debugging, refactoring, PR reviews |
 | `god-research-review` | Deep research review: literature synthesis, critical analysis, experimental design |
+| `god-backend-mastery` | Node.js (Express/Fastify/NestJS), Python (FastAPI/Django), Go, Spring Boot 3, API/data layers |
+| `god-python-mastery` | Python internals (GIL, memory, bytecode), typing/mypy, asyncio, packaging, performance |
 
 </details>
 
 <details>
-<summary><b>🛡️ Security & IAM — 6 Skills</b></summary>
+<summary><b>🛡️ Security & IAM — 7 Skills</b></summary>
 <br>
 
 <div align="center">
@@ -164,11 +166,12 @@ python installer/install.py
 | `god-iam-aws` | AWS IAM: policies, roles, SCPs, permission boundaries, IRSA, IAM Access Analyzer |
 | `god-iam-azure` | Azure Entra ID: RBAC, Managed Identities, PIM, Conditional Access |
 | `god-iam-gcp` | GCP IAM: resource hierarchy, Workload Identity, Organization Policy, IAM Deny |
+| `god-keycloak` | Keycloak realms/clients/roles, OIDC & SAML 2.0, token mappers, identity federation |
 
 </details>
 
 <details>
-<summary><b>⚙️ DevOps & Kubernetes — 5 Skills</b></summary>
+<summary><b>⚙️ DevOps & Kubernetes — 9 Skills</b></summary>
 <br>
 
 <div align="center">
@@ -189,11 +192,15 @@ python installer/install.py
 | `god-linux-mastery` | Linux internals, kernel/process/memory, eBPF/bpftrace, cgroups v2, systemd |
 | `god-containers-advanced` | OCI spec, OverlayFS, BuildKit, multi-arch, rootless containers, gVisor/Kata |
 | `god-infra-as-code` | Terraform (advanced HCL, state, modules), Pulumi, AWS CDK, Crossplane |
+| `god-helm-charts` | Chart authoring, sprig templates, `_helpers.tpl`, hooks/weights, chart testing, OCI |
+| `god-kustomize` | Bases/overlays, strategic-merge & JSON-6902 patches, components, generators, transformers |
+| `god-argocd-gitops` | ArgoCD architecture, Applications/ApplicationSets, sync waves/hooks, GitOps patterns |
+| `god-nebula-networking` | Nebula overlay mesh: lighthouses, relays, CA/cert management, firewall rules, roaming |
 
 </details>
 
 <details>
-<summary><b>⛓️ Web3 & Data — 5 Skills</b></summary>
+<summary><b>⛓️ Web3 & Data — 6 Skills</b></summary>
 <br>
 
 <div align="center">
@@ -214,6 +221,7 @@ python installer/install.py
 | `god-data-engineering` | Spark, Flink, Airflow/Prefect, dbt, data modeling, lakehouse, streaming pipelines |
 | `god-data-cleaning` | Data preprocessing, feature engineering, outlier detection, imputation, pipeline design |
 | `god-message-streaming` | Kafka internals (ISR, EOS, Streams), RabbitMQ, SQS/SNS, NATS JetStream, Pulsar |
+| `god-redis-mastery` | Redis data structures, persistence (RDB/AOF), Cluster, Sentinel, Streams, Lua, eviction |
 
 </details>
 
@@ -287,7 +295,7 @@ python installer/install.py
 </details>
 
 <details>
-<summary><b>📊 Observability & Reliability — 4 Skills</b></summary>
+<summary><b>📊 Observability & Reliability — 8 Skills</b></summary>
 <br>
 
 <div align="center">
@@ -306,6 +314,10 @@ python installer/install.py
 | `god-sre-reliability` | SLOs/SLIs/error budgets, toil reduction, capacity planning, incident response, GameDay |
 | `god-performance-engineering` | CPU/memory profiling, flame graphs, JVM tuning, Go pprof, k6/Gatling |
 | `god-platform-engineering` | IDP design, Backstage, golden paths, developer portals, paved roads |
+| `god-prometheus-grafana` | Prometheus TSDB/WAL, advanced PromQL, recording/alerting rules, Grafana dashboards |
+| `god-datadog` | Datadog Agent, DogStatsD custom metrics, APM/ddtrace, log management, monitors, SLOs |
+| `god-log-shipping` | Fluentd & Fluent Bit, buffer tuning, Logstash, Vector, pipelines to ES/Loki/S3 |
+| `god-sumologic` | Sumo Logic collectors/sources, search operators (parse/timeslice/transaction), dashboards |
 
 </details>
 
@@ -333,7 +345,7 @@ python installer/install.py
 </details>
 
 <details>
-<summary><b>🛠️ Tooling, Compliance & Operations — 9 Skills</b></summary>
+<summary><b>🛠️ Tooling, Compliance & Operations — 10 Skills</b></summary>
 <br>
 
 <div align="center">
@@ -359,8 +371,10 @@ python installer/install.py
 | `god-testing-mastery` | Unit/integration/E2E/contract/load/chaos/fuzz/mutation testing — full test pyramid |
 | `god-git-workflow` | Git internals, rebasing, bisect, reflog, monorepo, hooks, conventional commits |
 | `god-devex-tooling` | VS Code/JetBrains/Neovim mastery, tmux, fzf, ripgrep, debuggers, linters |
-| `god-tech-support` | Full-stack troubleshooting: reading stack traces, log analysis, network debugging |
-| `god-tech-support` | Kubernetes cluster triage, network debugging, systematic root-cause analysis |
+| `god-tech-support` | Full-stack troubleshooting: stack traces, log analysis, network debugging, cluster triage |
+| `god-linting-quality` | Cross-language linting: ruff, eslint, pylint, golangci-lint, shellcheck, pre-commit |
+| `god-shell-scripting` | bash/zsh, POSIX, strict mode, quoting/expansion, traps, robust portable CLI scripting |
+| `god-yaml-config` | YAML scalars/anchors/merge keys, multi-doc, the Norway problem, schema validation |
 
 </details>
 
@@ -371,7 +385,7 @@ python installer/install.py
 Every skill ships with a **Prompt Library** (`prompts/examples.md`) and an **adversarial test suite** (`tests.json`) that runs against local Ollama models or frontier APIs to empirically prove Zero-Hallucination compliance.
 
 ```bash
-# Run the full 52-skill test suite locally (requires Ollama)
+# Run the full 65-skill test suite locally (requires Ollama)
 python scripts/evaluate_skills.py --provider ollama --model qwen2.5:7b --output docs/TEST_RESULTS.md
 ```
 

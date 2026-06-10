@@ -50,7 +50,7 @@ python installer/install.py [OPTIONS]
 Options:
   --targets TEXT        Comma-separated: claude-code,codex,cursor,windsurf,
                         gemini,continue,perplexity,custom
-  --all-skills          Install all 50 skills without prompting
+  --all-skills          Install all 65 skills without prompting
   --dry-run             Preview what would be installed without making changes
   --non-interactive     Skip all prompts (use with --targets and --all-skills)
   --list-skills         Print all available skills and exit

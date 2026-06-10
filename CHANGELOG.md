@@ -4,6 +4,32 @@ All notable changes to the God-Level Skill Suite are documented here.
 
 ---
 
+## [1.2.0] — 2026-06-09
+
+### Added
+- **14 New Skills** (bringing the suite to **65**):
+  - `god-helm-charts` — chart authoring, sprig templates, `_helpers.tpl`, hooks/weights, chart testing, OCI registries
+  - `god-kustomize` — bases/overlays, strategic-merge & JSON-6902 patches, components, generators, transformers
+  - `god-argocd-gitops` — ArgoCD architecture, Applications/ApplicationSets, sync waves/hooks, GitOps patterns
+  - `god-nebula-networking` — Nebula overlay mesh: lighthouses, relays, CA/cert management, firewall rules, roaming
+  - `god-keycloak` — realms/clients/roles, OIDC & SAML 2.0, token mappers, identity federation
+  - `god-prometheus-grafana` — Prometheus TSDB/WAL, advanced PromQL, recording/alerting rules, Grafana dashboards
+  - `god-datadog` — Datadog Agent, DogStatsD custom metrics, APM/ddtrace, log management, monitors, SLOs
+  - `god-log-shipping` — Fluentd & Fluent Bit, buffer tuning, Logstash, Vector, pipelines to ES/Loki/S3
+  - `god-sumologic` — collectors/sources, search operators (parse/timeslice/transaction), dashboards
+  - `god-redis-mastery` — data structures, persistence (RDB/AOF), Cluster, Sentinel, Streams, Lua, eviction
+  - `god-python-mastery` — internals (GIL, memory, bytecode), typing/mypy, asyncio, packaging, performance
+  - `god-linting-quality` — cross-language linting: ruff, eslint, pylint, golangci-lint, shellcheck, pre-commit
+  - `god-shell-scripting` — bash/zsh, POSIX, strict mode, quoting/expansion, traps, portable CLI scripting
+  - `god-yaml-config` — scalars/anchors/merge keys, multi-doc, the Norway problem, schema validation
+
+### Fixed
+- Registry now lists `god-backend-mastery`, which shipped previously but was absent from the README registry.
+- Removed a duplicate `god-tech-support` row in the registry.
+- Corrected skill counts across the badge, registry heading, and category labels to the true total of **65**.
+
+---
+
 ## [1.1.0] — 2026-04-23
 
 ### Added

@@ -5,7 +5,7 @@
 ### Method 1: uv (Fastest — Recommended)
 ```bash
 # One-liner: clone and run
-git clone https://github.com/gnanirahulnutakki/god-skill-suite.git
+git clone https://github.com/ArdurAI/god-skill-suite.git
 cd god-skill-suite
 uv run installer/install.py
 ```
@@ -24,12 +24,12 @@ god-skills
 
 ### Method 4: Shell bootstrap (macOS/Linux)
 ```bash
-curl -sSL https://raw.githubusercontent.com/gnanirahulnutakki/god-skill-suite/main/installer/install.sh | bash
+curl -sSL https://raw.githubusercontent.com/ArdurAI/god-skill-suite/main/installer/install.sh | bash
 ```
 
 ### Method 5: PowerShell (Windows)
 ```powershell
-irm https://raw.githubusercontent.com/gnanirahulnutakki/god-skill-suite/main/installer/install.ps1 | iex
+irm https://raw.githubusercontent.com/ArdurAI/god-skill-suite/main/installer/install.ps1 | iex
 ```
 
 ### Method 6: Manual copy
@@ -50,7 +50,7 @@ python installer/install.py [OPTIONS]
 Options:
   --targets TEXT        Comma-separated: claude-code,codex,cursor,windsurf,
                         gemini,continue,perplexity,custom
-  --all-skills          Install all 50 skills without prompting
+  --all-skills          Install all 65 skills without prompting
   --dry-run             Preview what would be installed without making changes
   --non-interactive     Skip all prompts (use with --targets and --all-skills)
   --list-skills         Print all available skills and exit

@@ -1,7 +1,7 @@
 """
 God-Level Skill Suite
 =====================
-50 battle-hardened AI skills for Claude Code, Codex, Cursor, Windsurf, Gemini CLI and more.
+65 battle-hardened AI skills for Claude Code, Codex, Cursor, Windsurf, Gemini CLI and more.
 
 Usage:
     from god_skill_suite import install

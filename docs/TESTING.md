@@ -1,6 +1,6 @@
 # Skill Testing Framework
 
-The God-Level Skill Suite provides an advanced automated **Evaluation Framework** to ensure that all 52 skills strictly enforce the *Zero-Hallucination* and *Task Anchor* laws across various models, including offline local models.
+The God-Level Skill Suite provides an advanced automated **Evaluation Framework** to ensure that all 65 skills strictly enforce the *Zero-Hallucination* and *Task Anchor* laws across various models, including offline local models.
 
 ## Architecture
 The framework lives entirely in `scripts/evaluate_skills.py` and is fully zero-dependency built on Python's native `urllib`. 

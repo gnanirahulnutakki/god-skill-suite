@@ -43,7 +43,7 @@ def banner():
     print()
     print(c(BOLD + CYAN, "╔══════════════════════════════════════════════════════════════╗"))
     print(c(BOLD + CYAN, "║          GOD-LEVEL SKILL SUITE — INSTALLER v1.0             ║"))
-    print(c(BOLD + CYAN, f"║    52 Skills · Every Domain · Zero Hallucination Mode        ║"))
+    print(c(BOLD + CYAN, f"║    65 Skills · Every Domain · Zero Hallucination Mode        ║"))
     print(c(BOLD + CYAN, "╚══════════════════════════════════════════════════════════════╝"))
     print()
 
@@ -601,7 +601,7 @@ def print_usage_guide(installed_targets: list[str], target_configs: dict, skills
         print()
 
     print(c(BOLD, "  GITHUB REPOSITORY"))
-    print(c(CYAN, "    https://github.com/gnanirahulnutakki/god-skill-suite"))
+    print(c(CYAN, "    https://github.com/ArdurAI/god-skill-suite"))
     print(c(DIM,  "    Star it, fork it, contribute to it.\n"))
 
 

@@ -1,7 +1,7 @@
 [project]
 name = "god-skill-suite"
-version = "1.0.0"
-description = "50 god-level AI skills for Claude Code, Codex, Cursor, Windsurf, Gemini CLI and more"
+version = "1.2.0"
+description = "65 god-level AI skills for Claude Code, Codex, Cursor, Windsurf, Gemini CLI and more"
 readme = "README.md"
 license = { text = "MIT" }
 authors = [
@@ -27,9 +27,9 @@ god-skills = "god_skill_suite.install:main"
 install-god-skills = "god_skill_suite.install:main"
 
 [project.urls]
-Homepage = "https://github.com/gnanirahulnutakki/god-skill-suite"
-Repository = "https://github.com/gnanirahulnutakki/god-skill-suite"
-Issues = "https://github.com/gnanirahulnutakki/god-skill-suite/issues"
+Homepage = "https://github.com/ArdurAI/god-skill-suite"
+Repository = "https://github.com/ArdurAI/god-skill-suite"
+Issues = "https://github.com/ArdurAI/god-skill-suite/issues"
 
 [build-system]
 requires = ["hatchling"]

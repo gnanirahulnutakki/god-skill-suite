@@ -2,7 +2,7 @@
 # ─────────────────────────────────────────────────────────────────────────────
 # God-Level Skill Suite — Shell Bootstrap Installer
 # Works on macOS and Linux. Automatically detects available Python/uv.
-# Usage: curl -sSL https://raw.githubusercontent.com/gnanirahulnutakki/god-skill-suite/main/installer/install.sh | bash
+# Usage: curl -sSL https://raw.githubusercontent.com/ArdurAI/god-skill-suite/main/installer/install.sh | bash
 # ─────────────────────────────────────────────────────────────────────────────
 set -euo pipefail
 
@@ -57,7 +57,7 @@ install_uv() {
 }
 
 clone_or_update_repo() {
-    local repo_url="https://github.com/gnanirahulnutakki/god-skill-suite.git"
+    local repo_url="https://github.com/ArdurAI/god-skill-suite.git"
     local target_dir="$HOME/.god-skill-suite"
 
     if [ -d "$target_dir/.git" ]; then
